@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Customers Management
+    </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.js"></script>
+    <link rel="stylesheet" type="text/css" href="styling.css">
+    <script src="app.js"></script>
+    <script src="getDetailsCtrl.js"></script>
+    <script src="addContactsCtrl.js"></script>
+    <script src="services.js"></script>
+</head>
+
+<body ng-app="ContactsApp">
+    <div id="page">
+        <header class="container-fluid">
+            <div id="menu" class="navbar navbar-default">
+                <div class="navbar-header">
+                    <span id="imgPadding"><img width="100px" src="logo.jpg" alt="logo" target="_self" >
+                       </span>
+                    <div id="headerH3">
+                        <h3>Customer Management</h3>
+                    </div>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="nav">
+                        <a ui-sref="home">
+                            <h3>Home</h3>
+                        </a>
+                    </li>
+                    <li class="nav">
+                        <a ui-sref="customer">
+                            <h3>Customers</h3>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="table-responsive">
+                    <div ui-view>
+                        <h1> Welcome to Customer Management Serive </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <hr>
+            <h7>copyright @ All rights reserved,2016</h7>
+        </footer>
+    </div>
+</body>
+
+</html>
